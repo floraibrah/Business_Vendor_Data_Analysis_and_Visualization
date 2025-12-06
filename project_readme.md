@@ -1,111 +1,83 @@
-# 📦 Vendor Performance & Inventory Analytics
+# Vendor Performance & Inventory Analytics
 
-**Comprehensive analysis of vendor performance, inventory efficiency, and purchasing behavior using Python, SQL, and Power BI**
-
----
-
-## 🔍 Overview
-
-This project delivers a **data-driven vendor performance analysis** built on top of a SQLite database. Through **exploratory data analysis (EDA)**, interactive **Power BI dashboards**, and step-by-step Python visualizations, it uncovers key insights in purchasing trends, profitability, and inventory health — enabling smarter procurement and supply chain decisions.
-
-The project includes:
-
-- 📊 Step-by-step **EDA with visual storytelling**
-- 🧮 Key metric calculations (sales, gross profit, contribution %, unsold capital)
-- 📈 **Pareto analysis** and vendor segmentation
-- 📌 Integration with **Power BI** (coming soon)
-- 💡 Real-world business insights from raw transactional data
+** A data-driven exploration of vendor performance, product contribution, and inventory efficiency using Python, SQL, and Power BI. This project analyzes transactional data from a SQLite database and transforms it into meaningful insights for procurement, inventory planning, and strategic decision-making.**
 
 ---
 
-## 🧱 Project Structure
+## Overview
 
-my_vendor/
-├── data/ # Raw or intermediate data files
-├── logs/ # Logs for data processing and ingestion
-├── inventory.db # Source SQLite database
-├── ingestion_db.py # Script to connect and ingest data from SQLite
-├── get_vendor_summary.py # Script to compute vendor KPIs
-├── exploratory_data_analysis.ipynb # Notebook: EDA with visualizations
-├── my_vendor.ipynb # Notebook: End-to-end analysis
-├── vendor_performance_analysis.ipynb # Notebook: KPI metrics & charts
-├── README.md # Project documentation
+This project examines vendor behavior through exploratory data analysis, statistical methods, and business-focused visualizations. The goal is to understand:
 
+- Which vendors and brands drive the majority of revenue
+- How purchasing and sales dynamics vary across suppliers
+- What profit opportunities exist among underperforming or high-margin products
+- Where operational inefficiencies or concentration risks may occur
+
+Through a series of structured notebooks and scripts, the project walks through data ingestion, cleaning, visualization, and interpretation. A Power BI dashboard is planned to complement the Python analysis with interactive reporting.
 
 ---
 
-## 📌 Business Context
+---
 
-In supply chain and procurement-driven organizations, **tracking vendor performance and managing inventory risk** is crucial. This project simulates a real-world scenario in which:
+## Business Context
 
-- Historical purchase and sales data is stored in a relational database
-- Business users need insights on:
-  - Who are the top vendors by value?
-  - What percentage of purchases are concentrated among a few suppliers?
-  - How much capital is locked in unsold inventory?
-  - Which vendors have high margins but low sales?
+Organizations that rely on procurement, inventory management, or supplier relationships depend heavily on accurate vendor performance analytics. This project reflects a real-world setting where historical purchase and sales data form the basis for operational decisions.
 
-This project addresses all of these questions — visually and analytically.
+The analysis helps answer core business questions such as:
+
+- Who are the top-performing vendors by sales and profit?  
+- How concentrated is the supplier base?  
+- Which products deliver strong margins but limited volume?  
+- How much value is tied up in slow-moving or unsold inventory?  
+- Where are the opportunities to optimize purchasing, pricing, or stock levels?
+
+The insights are structured to support decision-making for procurement managers, supply chain analysts, operations leaders, and financial planners.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- **Python 3.8+**
-  - `pandas`, `matplotlib`, `seaborn` for analysis & visualizations
-  - `sqlite3` for database access
-- **Jupyter Notebooks** for step-by-step EDA and model development
-- **Power BI** *(coming soon)* for dashboards & interactive reporting
-- **Git & GitHub** for version control
-
----
-
-## 📊 Key Visualizations
-
-The EDA notebook walks through the data storytelling process with:
-
-- **Pareto chart**: Cumulative contribution of vendors to total purchases  
-- **Donut chart**: Capital distribution across vendors  
-- **Bar charts**: Top vendors by gross profit, margin, and unsold value  
-- **Formatted tables**: Contribution %, unsold inventory, and performance ranking  
-
-Each plot includes annotations, labels, and clean formatting — focusing on **clarity and business interpretation**.
+- Python 3.8+  
+  - `pandas`, `numpy` for data manipulation  
+  - `matplotlib`, `seaborn` for visualization  
+  - `scipy` for statistical analysis  
+  - `sqlite3` for database access  
+- Jupyter Notebooks for exploratory analysis  
+- Power BI (upcoming) for dashboarding and interactive reporting  
+- Git & GitHub for version control  
 
 ---
 
-## 📈 Metrics Computed
+## Key Visualizations
 
-- **Total Sales Dollars**
-- **Total Purchase Dollars**
-- **Gross Profit** and **Profit Margin**
-- **Purchase Contribution %** and **Cumulative Contribution %**
-- **Unsold Inventory Value**
-- **Vendor segmentation** based on performance
+The exploratory notebook includes a range of visual tools designed to build a clear narrative around vendor and brand performance:
 
-All metrics are aggregated and visualized to allow **comparative vendor analysis**.
+- Pareto charts illustrating cumulative contribution  
+- Vendor and brand bar charts  
+- Scatterplots for pricing, margin, and product performance  
+- Distribution and boxplot analyses for operational metrics  
+- Correlation heatmaps to understand variable relationships  
+- Tables summarizing performance tiers and contribution percentages  
+
+Each visualization is paired with interpretation to connect data patterns with operational meaning.
 
 ---
 
-## 🧾 Getting Started
+## Metrics Computed
 
-### 1. Clone the repo
+Several performance indicators are calculated and aggregated to support comparative evaluation:
 
-```bash
-git clone https://github.com/your-username/my_vendor.git
-cd my_vendor
+- Total Sales Dollars  
+- Total Purchase Dollars  
+- Gross Profit and Profit Margin  
+- Contribution Percentage (per vendor and per brand)  
+- Cumulative Contribution for Pareto analysis  
+- Unsold Inventory Value  
+- Vendor segmentation based on scale, margin, and performance  
 
-## Upcoming Power BI Report
-A fully interactive Power BI dashboard will be added to this repo, visualizing:
+These metrics are used to identify high-impact suppliers, strategic product opportunities, and areas where operational improvements may be possible.
 
-KPI cards (Gross Profit, Unsold Value, Total Vendors)
-
-Vendor ranking tables with slicers
-
-Pareto contribution curves
-
-Unsold capital by product or category
-
-📌 Stay tuned — .pbix file and dashboard screenshots will be included.
+---
 
 *Contact*
 Made with love by Gul Amiz Ibrahimi
